@@ -39,3 +39,18 @@ function currentSlide(n) {
     showSlides();
 }
 
+document.getElementById('search-bar').addEventListener('input', function() {
+    let filter = this.value.toLowerCase();
+    let posters = document.getElementsByClassName('poster');
+
+    Array.from(posters).forEach(poster => {
+        let title = poster.getElementsByClassName('movie-title')[0].textContent.toLowerCase();
+        if (title.includes(filter)) {
+            poster.style.display = "";
+        } else {
+            poster.style.display = "none";
+        }
+    });
+});
+
+    
