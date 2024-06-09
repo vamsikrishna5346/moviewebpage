@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Nav Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">MovieDB</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Genres</a></li>
+            </ul>
+            <div class="navbar-search">
+                <input type="text" id="search-bar" placeholder="Search movies...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="heading">
+        <h1>Telugu movies</h1>
+    </div>
+    <div class="button-container">
+        <a href="index.html"><button class="animated-button">Movies</button></a>
+        <a href="telugu.html"><button class="animated-button">Telugu</button></a>
+        <a href="tamil.html"><button class="animated-button">Tamil</button></a>
+        <a href="english.html"> <button class="animated-button">English</button></a>
+    </div><br>
+    <div class="poster-container">
+        <div class="poster">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/715/903/desktop-wallpaper-official-poster-of-telugu-romantic-film-love-story-directed-by-sekhar-kammula-telugu-movie-poster.jpg" alt="Movie Poster 1">
+            <p class="movie-title" style="color: aliceblue;">Love story</p>
+        </div>
+        <div class="poster">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/638/349/desktop-wallpaper-akhil-akkineni-hello-telugu-movie-first-look-ultra-posters-south-movie-poster.jpg" alt="Movie Poster 2">
+            <p class="movie-title" style="color: aliceblue;">Hello</p>
+        </div>
+        <div class="poster">
+            <img src="https://www.businessoftollywood.com/wp-content/uploads/2023/12/Rathnam-movie-poster.jpg" alt="Movie Poster 1">
+            <p class="movie-title" style="color: aliceblue;">Ratnam</p>
+        </div>
+        <div class="poster">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/529/22/desktop-wallpaper-why-english-titles-on-telugu-movie-posters.jpg" alt="Movie Poster 2">
+            <p class="movie-title" style="color: aliceblue;">RED</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p class="movie-title" style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 2">
+            <p class="movie-title" style="color: aliceblue;">Pushpa</p>
+        </div>
+        <div class="poster">
+            <img src="https://www.filmiforest.com/img/poster_image/merise-merise.jpg" alt="Movie Poster 1">
+            <p class="movie-title" style="color: aliceblue;">story</p>
+        </div>
+        <div class="poster">
+            <img src="https://pbs.twimg.com/media/BaddfNTCQAA8ZLb.jpg" alt="Movie Poster 2">
+            <p class="movie-title" style="color: aliceblue;">happy</p>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <p>@vamsi krishna movie web page</p>
+    </footer>
+    <script>
+        document.getElementById('search-bar').addEventListener('keyup', function() {
+            var input = document.getElementById('search-bar').value.toLowerCase();
+            var posters = document.querySelectorAll('.poster');
+            
+            posters.forEach(function(poster) {
+                var title = poster.querySelector('.movie-title').innerText.toLowerCase();
+                if (title.includes(input)) {
+                    poster.style.display = '';
+                } else {
+                    poster.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
