@@ -238,14 +238,14 @@ img {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000; /* Ensure it's on top of other content */
-    background-color: rgba(11, 11, 11, 0); /* Transparent background */
+    background-color: rgba(16, 15, 15, 0); /* Transparent background */
 }
 
 .animated-button {
     padding: 10px 20px;
     margin: 0 10px;
     border: none;
-    background-color: #3498db;
+    background-color: #0837f3;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -254,7 +254,7 @@ img {
 }
 
 .animated-button:hover {
-    background-color: #2980b9;
+    background-color: #0c3af0;
     transform: translateY(-2px);
 }
 
@@ -266,12 +266,12 @@ img {
         bottom: 0px; /* Positioning at the bottom */
         left: 50%; /* Center horizontally */
         transform: translateX(-50%); /* Center horizontally */
-        background-color: rgba(255, 255, 255, 0); /* Transparent background */
+        background-color: rgba(17, 16, 16, 0); /* Transparent background */
         z-index: 1000; /* Ensure it's on top of other content */
         margin-top: 10px; /* Margin for spacing */
         display: flex; /* Flexbox display */
         justify-content: center; /* Center content */
-        background-color: #606364;
+        background-color: #2f3031;
     }
     
     .animated-button {
@@ -294,16 +294,16 @@ img {
 
 .poster-container {
     display: grid;
-    gap: 20px;
+    gap: 10px;
     max-width: 1200px;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
 }
 
 .poster {
-    background-color: #000;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #0d0c0c;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(190, 16, 16, 0.1);
     overflow: hidden;
     padding: 10px;
     text-align: center;
@@ -330,12 +330,68 @@ img {
 /* Responsive design */
 @media (max-width: 768px) {
     .poster img {
-        height: 200px; /* Adjust height for smaller screens */
-    }
+        height: 200px;
+        
+     } /* Adjust height for smaller screens */
+       
+       
+    
 }
 
 @media (max-width: 480px) {
     .poster img {
-        height: 150px; /* Adjust height for very small screens */
+        height: 250px;
+
+     /* Adjust height for very small screens */
+        
     }
 }
+footer{
+    background-color: #353131;
+    padding: 10px;
+    color: #fff;
+}
+/* Base styles */
+.heading {
+    background-color: #fffcfb;
+    padding: 10px;
+    color: #de7804;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.heading h1 {
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .heading {
+        padding: 15px;
+       
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        padding: 10px;
+    }
+    .heading {
+        background-color: #c8c3c2;
+        padding: 20px;
+        color: #de7804;
+        position: relative;
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    
+    .heading h1 {
+        font-size: 1.5em;
+    }
+}
+
+
