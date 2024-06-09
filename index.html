@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Nav Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">MovieDB</a>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Top Rated</a></li>
+            </ul>
+            <div class="navbar-search">
+                <input type="text" id="search-bar" placeholder="Search movies...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://i0.wp.com/www.shikipedia.com/wp-content/uploads/2023/09/jawan-movie.jpg?fit=1280%2C720&ssl=1" >
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2023/02/split-image-of-pixar-movie-posters.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://media.licdn.com/dms/image/C4D12AQEIdhKfSrXLIQ/article-inline_image-shrink_1500_2232/0/1595844471591?e=1723075200&v=beta&t=EK2yEFJdJYzRQEI95VsrwrIyZkLNbrl0W78fhBorZv4" >
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div><br>
+    <div class="button-container">
+        <button class="animated-button"> movies</button>
+        <button class="animated-button">Telugu</button>
+        <button class="animated-button">Tamil</button>
+        <button class="animated-button">English</button>
+    </div>
+    <div class="poster-container">
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 2">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYDbOT3xF0NS2uMzYBTaCrU9sJnh6M2vlPw&s" alt="Movie Poster 3">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 2">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 3">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 2">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 2">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 3">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 2">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-s_2JH2BY_GcdBzmT2-1PBVQhHAC1zyg-fd8_9-HRKFy0EC5W_gBN5ldoBCVi-TLKPqc&usqp=CAU" alt="Movie Poster 3">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WOanFSU2veAIZhax-Ir3mB4IofsN1HjNEw&s" alt="Movie Poster 1">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        <div class="poster">
+            <img src="https://i.ebayimg.com/images/g/rTUAAOSwFaRkfzZ8/s-l1200.jpg" alt="Movie Poster 2">
+            <p style="color: aliceblue;">83 movie</p>
+        </div>
+        </div>
+        
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
